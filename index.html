@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>EcoVision</title>
+    <style>
+        body{
+            background-image: url(img/bg.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="logo.png" width="175px" height="40px">
+
+        <section class="menu">
+            <ul class="menu-list">
+                <li>Home</li>
+                <li><a href="https://ecovisiones.000webhostapp.com/" target="_blank">Login</a></li>
+                <li><a href="our team/index.html" target="_blank">Meet Our Team!</a></li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+
+        <section class="left">
+            <p class="msg">Together, let's embark on this journey towards a sustainable future. Join EcoVision today and be part of the positive change our planet urgently needs.</p>
+            <button class="cta"><a href="about us.html" target="_blank">Learn More!</a></button>
+        </section>
+
+    </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+
+
+</body>
+
+</html>
